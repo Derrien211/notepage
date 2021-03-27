@@ -1,4 +1,4 @@
 - name: ApeWs CLI
-  href: apews_cli/apews-userdocumentation.md
+  href: apews_cli/
 - name: NPM CLI
   href: npm_cli/custom_npm_package.md

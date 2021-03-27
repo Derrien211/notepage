@@ -9,10 +9,22 @@
       "output": {
         ".html": {
           "relative_path": "clis/apews_cli/apews-userdocumentation.html",
-          "hash": "y8ln8vhfpHc4XQB+hYqXww=="
+          "hash": "Nn5GAlmpAdQQjr8BxM3Jqw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/clis/apews_cli/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "clis/apews_cli/toc.html",
+          "hash": "arvK8hzEBfsYMnHB+ncS9A=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -24,7 +36,7 @@
           "hash": "6+d9htOaOpQXH402Ns6XYQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -36,7 +48,7 @@
           "hash": "99sD8SWi3kEJqYFk8TfWNg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "clis/toc.html",
-          "hash": "ZVMICMKIt1Bccp9BbZ80NA=="
+          "hash": "IL3+/7HeSmzo3ANbcAoHWQ=="
         }
       },
       "is_incremental": false,
