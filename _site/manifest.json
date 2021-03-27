@@ -1,0 +1,204 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/git_repos/github/notepage",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/clis/apews_cli/apews-userdocumentation.md",
+      "output": {
+        ".html": {
+          "relative_path": "clis/apews_cli/apews-userdocumentation.html",
+          "hash": "y8ln8vhfpHc4XQB+hYqXww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/clis/npm_cli/custom_npm_package.md",
+      "output": {
+        ".html": {
+          "relative_path": "clis/npm_cli/custom_npm_package.html",
+          "hash": "6+d9htOaOpQXH402Ns6XYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/clis/team_foundation_cli/tf-cheatsheet.md",
+      "output": {
+        ".html": {
+          "relative_path": "clis/team_foundation_cli/tf-cheatsheet.html",
+          "hash": "99sD8SWi3kEJqYFk8TfWNg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/clis/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "clis/toc.html",
+          "hash": "ZVMICMKIt1Bccp9BbZ80NA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/docker/docker_cheatsheet.md",
+      "output": {
+        ".html": {
+          "relative_path": "docker/docker_cheatsheet.html",
+          "hash": "/RNtBSuVtiwKfnR1geeNdg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/docker/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docker/toc.html",
+          "hash": "JsWD3+WSNVWFJg0Dz4X/3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "JnhY1tooFzALCjfwzSEXuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/shells/Linux/General.md",
+      "output": {
+        ".html": {
+          "relative_path": "shells/Linux/General.html",
+          "hash": "R4ZmPNNZYOB7HmEhSS5c0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/shells/Powershell/paths/paths.md",
+      "output": {
+        ".html": {
+          "relative_path": "shells/Powershell/paths/paths.html",
+          "hash": "PcgKO4XtQEIKJs7/cvvRhg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/shells/terminal/open_terminal.md",
+      "output": {
+        ".html": {
+          "relative_path": "shells/terminal/open_terminal.html",
+          "hash": "rGbAYmEzCmAPZ7WY774sUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/shells/terminal/settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "shells/terminal/settings.html",
+          "hash": "r2tQL4g7A/89jUozwOu9dw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/shells/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "shells/toc.html",
+          "hash": "wkI5j+ulzxsmTjsOqXD4Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "RADRWwKh0TZ0nsSG7whQfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 9,
+          "skipped_file_count": 8
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

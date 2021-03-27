@@ -1,0 +1,26 @@
+{
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "**/**.md",
+                    "**/toc.yml"
+                ],
+                "src": "content"
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "**/*.jpeg",
+                    "**/*.png"
+                ],
+                "src": "content"
+            }
+        ],
+        "dest": "_site",
+        "template": [
+            "default"
+        ]
+    }
+}
