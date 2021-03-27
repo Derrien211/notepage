@@ -18,7 +18,7 @@
                 "src": "content"
             }
         ],
-        "dest": "_site",
+        "dest": "docs",
         "template": [
             "default"
         ]
