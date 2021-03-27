@@ -13,7 +13,8 @@
             {
                 "files": [
                     "**/*.jpeg",
-                    "**/*.png"
+                    "**/*.png",
+                    "web.config"
                 ],
                 "src": "content"
             }

@@ -179,6 +179,17 @@
       },
       "is_incremental": false,
       "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "content/web.config",
+      "output": {
+        "resource": {
+          "relative_path": "web.config"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
     }
   ],
   "incremental_info": [
@@ -195,6 +206,13 @@
           "incrementalPhase": "build",
           "total_file_count": 10,
           "skipped_file_count": 10
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
