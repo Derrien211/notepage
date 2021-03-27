@@ -20,7 +20,11 @@
         ],
         "dest": "docs",
         "template": [
-            "default"
-        ]
+            "default",
+            "templates/darkfx"
+        ],
+        "globalmetadata": {
+            "_enableSearch": "true"
+        }
     }
 }
