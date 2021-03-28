@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ape Workspace Command Line Interface </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Ape Workspace Command Line Interface ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ape-workspace-command-line-interface">Ape Workspace Command Line Interface</h1>
+
+<h2 id="benutzerdokumentation">Benutzerdokumentation</h2>
+<h3 id="1-was-ist-die-ape-workspace-cli">1. Was ist die Ape Workspace CLI?</h3>
+<p>Das Ape Workspace Command Line Interface (CLI) ist ein Tool zum Erstellen der grundlegenden Projektstruktur für ein WebLine Mobile 2 AddIn. </p>
+<p>Die Ape Workspace CLI wird über die <em>PowerShell</em> installiert, aufgerufen und ausgeführt.</p>
+<h3 id="2-wie-installiere-ich-die-ape-workspace-cli">2. Wie installiere ich die Ape Workspace CLI?</h3>
+<p>Die Ape Workspace CLI ist ein benutzerdefiniertes .NET Tool und benötigt deshalb die .NET CLI, um als Tool installiert werden zu können. Die .NET CLI ist Teil des .NET SDK und ist somit im Regelfall auf den Rechnern der Entwickler bereits installiert.</p>
+<p>Zur Kontrolle, ob die .NET CLI installiert ist, reicht folgender Aufruf über die <em>PowerShell</em>:</p>
+<pre><code class="lang-powershell">dotnet
+</code></pre><p>Ist die .NET CLI installiert, werden als Output Bedienhinweise für das <code>dotnet</code> Kommando angezeigt.</p>
+<p>Fehlt die .NET CLI, folgt als Output ein Fehler.  Weitere Informationen zur Installation der .NET CLI finden sich in der <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x">Microsoft Dokumentation</a>.</p>
+<h5 id="installation-des-tools">Installation des Tools</h5>
+<p>Die Installation der Ape Workspace CLI erfolgt über das <code>dotnet tool</code> Kommando unter Angabe des Pfades des NuGet-Feeds, in dem sich das NuGet-Package der Ape Workspace CLI befindet, und dem Namen des zu installierenden Tools.</p>
+<pre><code class="lang-powershell">#Befehl zur Installation der Ape Workspace CLI als .NET Tool
+
+$nugetFeed = &quot;\\intern.intend.de\corp\NuGetRepo\Channels\Intend.Ape&quot;;
+dotnet tool install -g ape.workspace.cli --add-source $nugetFeed; 
+
+#HINWEIS:
+#Feed kann direkt als Zeichenkette der Option --add-source als Parameter übergeben werden.
+#Verwendung einer Variablen wegen Fehlern durch Zeilenumbruch beim Kopieren.
+</code></pre><h5 id="installierte-tools-anzeigen">Installierte Tools anzeigen</h5>
+<p>Zum Anzeigen der installierten .NET Tools dient folgender Befehl:</p>
+<pre><code class="lang-powershell">dotnet tool list -g
+</code></pre><h5 id="installiertes-tool-updaten">Installiertes Tool updaten</h5>
+<p>Sollte es eine neue Version der Ape Workspace CLI geben, kann wie folgt ein Update durchgeführt werden:</p>
+<pre><code class="lang-powershell">$nugetFeed = &quot;\\intern.intend.de\corp\NuGetRepo\Channels\Intend.Ape&quot;;
+dotnet tool update -g ape.workspace.cli --add-source $nugetFeed;
+
+#HINWEIS:
+#Feed kann direkt als Zeichenkette der Option --add-source als Parameter übergeben werden.
+#Verwendung einer Variablen wegen Fehlern durch Zeilenumbruch beim Kopieren.
+</code></pre><h3 id="3-wie-verwende-ich-die-ape-workspace-cli">3. Wie verwende ich die Ape Workspace CLI?</h3>
+<p>Da die Ape Workspace CLI als globales Tool auf dem Rechner installiert wurde, reicht das Aufrufen über den Befehl <code>apews</code> aus.</p>
+<p>Die Ape Workspace CLI benötigt zur Erstellung der WLM2-AddIn-Projektstruktur zwingend den <em>Projektnamen</em> als Parameter. Alle weiteren Parameter sind optional.</p>
+<h5 id="apews-kommando">apews-Kommando</h5>
+<p>Die Projektstruktur wird in dem Ordner erstellt, der zum Zeitpunkt des Aufrufs das <em>current working directory</em> ist. Das <code>apews</code>-Kommando muss also aus dem <strong>Zielordner</strong> heraus aufgerufen werden.</p>
+<p>Die Erstellung einer Projektstruktur für ein WLM2-AddIn erfolgt wie folgt:</p>
+<pre><code class="lang-powershell">#Beispiele zur Verwendung des Befehls &quot;apews&quot;
+#Aufruf erfolgt aus dem Verzeichnis, in dem das AddIn erstellt werden soll
+
+apews -n [Projektname] #einfacher Aufruf: kein Präfix, Templates werden installiert
+
+apews -n [Projektname] -p [Projektpraefix] -t [true | false] #vollständiger Aufruf
+</code></pre><h5 id="liste-der-verfügbaren-parameter">Liste der verfügbaren Parameter</h5>
+<table>
+<thead>
+<tr>
+<th>Kürzel</th>
+<th>Langname</th>
+<th style="text-align:left">Funktion</th>
+<th>erforderlich?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-n</td>
+<td>--project-name</td>
+<td style="text-align:left">Core-Name der AddIn-Solution <em>und</em> der Projekte.<br><br>Beispiel: &quot;RLP.EIF&quot;<br>Solutionname: &quot;[Präfix].RLP.EIF&quot;<br>Projektnamen: &quot;RLP.EIF.[Business|Service|UI]&quot;</td>
+<td>ja</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>--prefix</td>
+<td style="text-align:left">Präfix der AddIn-Solution, welches nicht für die Projektnamen verwendet wird.<br><br>Beispiel: &quot;Intend.Wlm2.Addin&quot;<br>Solutionname: &quot;Intend.Wlm2.Addin.[Core-Name]&quot;<br>Projektnamen: &quot;[Core-Name].[Business|Service|UI]&quot;</td>
+<td>nein</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>--templates</td>
+<td style="text-align:left">Argumente: <em>true</em> oder <em>false</em><br>Bestimmt, ob die WLM2-AddIn Templates vor Erstellen der Projektstruktur installiert werden sollen oder nicht.<br>Sofern nicht angegeben, werden die Templates installiert.</td>
+<td>nein</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-was-leistet-die-ape-workspace-cli">4. Was leistet die Ape Workspace CLI?</h3>
+<p>Die Ape Workspace CLI übernimmt folgende Aufgaben zur Erstellung einer Projektstruktur für ein WLM2-AddIn:</p>
+<ul>
+<li>das Installieren der dotnet-Templates für den Workspace &amp; die Projekte, falls nicht anders angegeben</li>
+<li>Anlegen des Ape Workspace <strong>inklusive</strong> Ordnerstruktur, Create-Release-Skripten usw.</li>
+<li>Anlegen der AddIn-Solution innerhalb des Workspaces</li>
+<li>Anlegen eines Basis Business-, Service- und -UI-Projekts innerhalb des Workspaces, <strong>inklusive</strong> Service_Module- und UI-Module-Klassen mit Codebeispielen zur Registierung der UnityContainer</li>
+<li>Hinzufügen der Projekte zur AddIn-Solution</li>
+<li>Wiederherstellen der NuGet-Referenzen</li>
+</ul>
+<h3 id="5-wie-sieht-der-output-für-ein-wlm2-addin-aus">5. Wie sieht der Output für ein WLM2-AddIn aus?</h3>
+<p>Das Anlegen eines WLM2 AddIns über die Ape Workspace CLI erzeugt folgenden Output:</p>
+<pre><code class="lang-powershell">C:\USERS\REBECCAV\DESKTOP\TESTORDNER
+│   ApeWorkspace.json
+│   Intend.Wlm2.Addin.Beispiel.sln
+│   NuGet.Config
+│
+├───Config
+│   └───ApeVs
+│           __file$Version__.props
+│
+├───Docs
+│       .gitkeep
+│
+├───Source
+│   ├───src
+│   │   │   .gitkeep
+│   │   │
+│   │   ├───Beispiel.Business
+│   │   │   │   Beispiel.Business.csproj
+│   │   │   │
+│   │   │   ├───obj
+│   │   │   │       Beispiel.Business.csproj.nuget.cache
+│   │   │   │       Beispiel.Business.csproj.nuget.g.props
+│   │   │   │       Beispiel.Business.csproj.nuget.g.targets
+│   │   │   │       project.assets.json
+│   │   │   │
+│   │   │   └───Properties
+│   │   │           AssemblyInfo.cs
+│   │   │
+│   │   ├───Beispiel.Service
+│   │   │   │   Beispiel.Service.csproj
+│   │   │   │   Service_Module.cs
+│   │   │   │
+│   │   │   ├───obj
+│   │   │   │       Beispiel.Service.csproj.nuget.cache
+│   │   │   │       Beispiel.Service.csproj.nuget.g.props
+│   │   │   │       Beispiel.Service.csproj.nuget.g.targets
+│   │   │   │       project.assets.json
+│   │   │   │
+│   │   │   └───Properties
+│   │   │           AssemblyInfo.cs
+│   │   │
+│   │   ├───Beispiel.UI
+│   │   │   │   Beispiel.UI.csproj
+│   │   │   │   UI_Module.cs
+│   │   │   │
+│   │   │   ├───obj
+│   │   │   │       Beispiel.UI.csproj.nuget.cache
+│   │   │   │       Beispiel.UI.csproj.nuget.g.props
+│   │   │   │       Beispiel.UI.csproj.nuget.g.targets
+│   │   │   │       project.assets.json
+│   │   │   │
+│   │   │   └───Properties
+│   │   │           AssemblyInfo.cs
+│   │   │
+│   │   └───_Bundle
+│   │       │   _Bundle.csproj
+│   │       │
+│   │       ├───obj
+│   │       │       project.assets.json
+│   │       │       _Bundle.csproj.nuget.cache
+│   │       │       _Bundle.csproj.nuget.g.props
+│   │       │       _Bundle.csproj.nuget.g.targets
+│   │       │
+│   │       └───Properties
+│   │               AssemblyInfo.cs
+│   │
+│   └───test
+│           .gitkeep
+│
+└───Task
+    ├───Build
+    │   ├───MsBuild
+    │   │       Build.ps1
+    │   │       Clean.ps1
+    │   │
+    │   └───NuGet
+    │           pack.ps1
+    │
+    ├───Cleanup
+    │   └───Workspace
+    │           .gitkeep
+    │
+    ├───Common
+    │       Initialize-TaskSystem.ps1
+    │       nuget.exe
+    │       NuGet.ps1
+    │       TaskSystem.psm1
+    │       VisualStudio.ps1
+    │       Workspace.ps1
+    │
+    ├───Publish
+    │   └───NuGet
+    │           push.ps1
+    │
+    └───Trigger
+            Clear-Workspace.ps1
+            Create-CI-Release.ps1
+            Create-Release.ps1
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Derrien211/notepage/blob/main/content/clis/apews_cli/apews-userdocumentation.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+                <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

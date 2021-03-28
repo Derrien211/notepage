@@ -1,0 +1,17 @@
+{{^_disableContribution}}
+<div class="contribution-panel mobile-hide" style="vertical-align: middle;">
+    {{#docurl}}
+    <a href="{{docurl}}" title="{{__global.improveThisDoc}}" class="fab btn-info pull-right"><i style="vertical-align: middle;" class="fas fa-pencil-alt fa-lg"></i></a>
+    {{/docurl}}
+    {{#sourceurl}}
+    <a href="{{sourceurl}}" title="{{__global.viewSource}}" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+    {{/sourceurl}}
+</div>
+{{/_disableContribution}}
+
+<div class="hidden-sm col-md-2" role="complementary">
+  <div class="sideaffix">
+    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    </nav>
+  </div>
+</div>

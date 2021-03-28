@@ -1,0 +1,32 @@
+{
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "**/**.md",
+                    "**/toc.yml"
+                ],
+                "src": "content"
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "**/*.jpeg",
+                    "**/*.png",
+                    "web.config"
+                ],
+                "src": "content"
+            }
+        ],
+        "dest": "docs",
+        "template": [
+            "default",
+            "templates/darkfx"
+        ],
+        "postProcessors": ["ExtractSearchIndex"],
+        "globalmetadata": {
+            "_enableSearch": "true"
+        }
+    }
+}

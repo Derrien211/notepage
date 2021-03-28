@@ -1,0 +1,243 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/git_repos/github/notepage",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/clis/apews_cli/apews-userdocumentation.md",
+      "output": {
+        ".html": {
+          "relative_path": "clis/apews_cli/apews-userdocumentation.html",
+          "hash": "hZN+e3F43li3FWoXz4BCqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/clis/apews_cli/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "clis/apews_cli/overview.html",
+          "hash": "Q62gCdS0gf3Hq/apXXWBAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/clis/npm_cli/custom_npm_package.md",
+      "output": {
+        ".html": {
+          "relative_path": "clis/npm_cli/custom_npm_package.html",
+          "hash": "gWE6ckLefmQXaxdT7p3osQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/clis/team_foundation_cli/tf-cheatsheet.md",
+      "output": {
+        ".html": {
+          "relative_path": "clis/team_foundation_cli/tf-cheatsheet.html",
+          "hash": "FLYeac3RAb2FBmVY9KhMOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/clis/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "clis/toc.html",
+          "hash": "vR0YfguiO7tXVKbmWob0VA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/docker/docker_cheatsheet.md",
+      "output": {
+        ".html": {
+          "relative_path": "docker/docker_cheatsheet.html",
+          "hash": "EQAd8MwHrZoT8uZ4vKsHUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/docker/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docker/toc.html",
+          "hash": "JsWD3+WSNVWFJg0Dz4X/3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "TlkgBQ8Jo/vr8D9zWlFRBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/shells/Linux/General.md",
+      "output": {
+        ".html": {
+          "relative_path": "shells/Linux/General.html",
+          "hash": "uhnrabwRu8Vc794lupw6Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/shells/Powershell/paths/paths.md",
+      "output": {
+        ".html": {
+          "relative_path": "shells/Powershell/paths/paths.html",
+          "hash": "0XqfAUrfFw5NcbCBeVXxWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/shells/terminal/open_terminal.md",
+      "output": {
+        ".html": {
+          "relative_path": "shells/terminal/open_terminal.html",
+          "hash": "STuR0nunJk7AvZOWKr7e2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/shells/terminal/settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "shells/terminal/settings.html",
+          "hash": "oEvjETbpwApF2ENOM/9qUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/shells/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "shells/toc.html",
+          "hash": "wkI5j+ulzxsmTjsOqXD4Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "D0XxhAtSslJXGXsxgpMb/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "content/web.config",
+      "output": {
+        "resource": {
+          "relative_path": "web.config"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
+          "skipped_file_count": 10
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
