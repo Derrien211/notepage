@@ -1,5 +1,12 @@
 - name: ApeWs CLI
-  href: apews_cli/toc.yml
-  topicHref: apews_cli/overview.md
+  items:
+    - name: User Documentation
+      href: apews_cli/apews-userdocumentation.md
 - name: NPM CLI
-  href: npm_cli/custom_npm_package.md
+  items:
+    - name: Custom npm Package
+      href: npm_cli/custom_npm_package.md
+- name: TF CLI
+  items:
+    - name: Cheat Sheet
+      href: team_foundation_cli/tf-cheatsheet.md
