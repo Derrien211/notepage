@@ -1,5 +1,0 @@
-- name: ApeWs CLI
-  href: apews_cli/toc.yml
-  topicHref: apews_cli/overview.md
-- name: NPM CLI
-  href: npm_cli/custom_npm_package.md
